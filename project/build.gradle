@@ -1,0 +1,19 @@
+allprojects {
+    group 'com.epam.esm'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = JavaVersion.VERSION_1_8
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        compile 'org.springframework.boot:spring-boot-starter-web:2.2.6.RELEASE'
+        compile 'com.amazonaws:aws-java-sdk:1.11.752'
+    }
+}

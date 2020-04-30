@@ -1,0 +1,5 @@
+rootProject.name = 'aws'
+include 'repository'
+include 'service'
+include 'rest'
+
